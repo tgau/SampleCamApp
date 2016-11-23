@@ -1,8 +1,9 @@
+forked and modified from https://github.com/ddemichele/cane_passport.git and https://github.com/jonashartmann/webcam-directive
+
+
 #Cloudant Angular Node Express with Bootstrap
 
 I searched around for a project that demonstrated using Cloudant and Node with authentication.  I could only find examples using Mongo and Passport JS, so this is a modification of a project that demonstrates using the new [Cloudant Node library](https://github.com/cloudant/nodejs-cloudant).
-
-Forked from [mancioshell/NodeJS-ExpresJS-MongoDB-AngularJS-Bootstrap-NotyJS-seed](https://github.com/mancioshell/NodeJS-ExpresJS-MongoDB-AngularJS-Bootstrap-NotyJS-seed) and spiced with [Twitter Bootstrap](https://github.com/twitter/bootstrap). 
 
 Start an awesome app with AngularJS + Bootstrap on the front, Cloudant + Express + Node on the back. This project is an
 application skeleton for a typical [AngularJS](http://angularjs.org/) web app for those who want
