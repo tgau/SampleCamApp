@@ -11,12 +11,9 @@ exports.initialize = function(req,res){
         var admin_pass = config.admin_pass;
         var index_field = config.index_field;
         var hash_pass = bcrypt.hashSync(admin_pass, 10);
-
         var errstr = '';
-        
         // This will delete and recreate the database everytime you run the initialize function
         console.log("Attempting to delete database: " + dbname);
-
         // Try deleting the database. If 
         Cloudant.db.destroy(dbname, function(err, body) {
             console.log("Setting up the Cloudant database");

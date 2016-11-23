@@ -2,10 +2,10 @@
   "name": "camapp",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "~1.4.0",
-    "angular-route": "~1.2.16",
-    "bootstrap": "~3.1.1",
-    "angular-flash": "~0.1.13",
+    "angular": "~1.5.8",
+    "angular-route": "~1.5.8",
+    "bootstrap": "~3.3.7",
+    "angular-flash": "~0.1.14",
     "webcam": "webcam-directive#^3.1.1"
   },
   "private": true,
@@ -15,5 +15,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "resolutions": {
+    "angular": "~1.5.8"
+  }
 }

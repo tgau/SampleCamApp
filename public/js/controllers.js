@@ -68,9 +68,7 @@ var setupAppControllers = angular.module('setupAppControllers', [ 'angular-flash
 
 setupAppControllers.controller('SetupCtrl', ['$scope', '$http', 'flash',
     function ($scope, $http, flash) {
-        console.log("In the Setup Cloudant Controller");
-
-        $http({method: 'GET', url: '/setup/initialize'
+            $http({method: 'GET', url: '/setup/initialize'
             }).
             success(function(data, status, headers, config) {
                 console.log("success");
@@ -173,6 +171,7 @@ webAppControllers.controller('scanCtrl', function($scope, $window) {
      */
     var sendSnapshotToServer = function sendSnapshotToServer(imgBase64) {
         $scope.snapshotData = imgBase64;
+        console.log($scope.snapshotData);
     };
 });
 webAppControllers.controller('HomeCtrl', ['$scope', '$http','$window','$location',

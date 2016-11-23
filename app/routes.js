@@ -26,6 +26,12 @@ module.exports = function(app, passport, api) {
         res.render('partials/' + name);
     });
 
+    app.post('/saveImage', isLoggedIn, function(req, res, data){
+            // res.render('webapp', {
+            //     user: req.user
+            // });
+            console.log("image has been send");
+    });
     app.post('/api/login',  function(req, res, next) {
       passport.authenticate('local-login', function(err, user, info) {
         console.log("In Passport Authenticate Route");
